@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outfit Rater</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="outfit-page">
+  <div class="container">
+    <h1>👗 Build Your Outfit</h1>
+    <p>Select items to dress your character and max your Rizz!</p>
+
+    <div class="outfit-builder">
+      <!-- Left: Options -->
+      <div id="outfit-options" class="options-column"></div>
+
+      <!-- Right: Person preview -->
+      <div class="person-column">
+        <div class="person">
+          <img id="person-base" src="img/person.png" alt="person" />
+          <div id="person-hat" class="layer hat"></div>
+          <div id="person-shirt" class="layer shirt"></div>
+          <div id="person-pants" class="layer pants"></div>
+          <div id="person-shoes" class="layer shoes"></div>
+          <div id="person-accessories" class="layer accessories"></div>
+        </div>
+
+        <!-- Rizz meter -->
+        <div class="score-container">
+          <div class="score-label">Rizz Meter</div>
+          <div class="score-bar">
+            <div id="score-fill"></div>
+          </div>
+          <div class="result-text" id="resultText">Add items to your outfit!</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html" class="btn btn-white btn-back-home">🏠 Back Home</a>
+  </div>
+
+  <script src="outfit-rater.js"></script>
+</body>
+</html>
